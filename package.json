@@ -1,0 +1,42 @@
+{
+    "name": "ex-pipe",
+    "version": "0.0.1",
+    "description": "Library used to mimic Elixir pipe functionality",
+    "main": "index.js",
+    "scripts": {
+        "test": "tap -Rspec test/*.js",
+        "lint": "eslint index.js test/*.js",
+        "build": "",
+        "coverage": "tap test/*.js --cov --coverage-report=lcov"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akoutmos/ex-pipe.git"
+    },
+    "keywords": [
+        "elixir",
+        "pipe",
+        "fp",
+        "functional"
+    ],
+    "files": [
+        "dist",
+        "index.js"
+    ],
+    "author": "Alexander Koutmos",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/akoutmos/ex-pipe/issues"
+    },
+    "devDependencies": {
+        "cjs-to-es6": "1.0.1",
+        "eslint": "4.0.0",
+        "eslint-config-standard": "10.2.1",
+        "eslint-plugin-import": "2.3.0",
+        "eslint-plugin-node": "5.0.0",
+        "eslint-plugin-promise": "3.5.0",
+        "eslint-plugin-standard": "3.0.1",
+        "tap": "5.7.2"
+    },
+    "homepage": "https://github.com/akoutmos/ex-pipe#readme"
+}
