@@ -1,5 +1,5 @@
 let test = require('tap').test
-let P = require('../index.js')
+let P = require('../src/index.cjs.js')
 
 test('Ex-Pipe', (t) => {
     t.plan(4)
