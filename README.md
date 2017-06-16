@@ -12,8 +12,8 @@ page on the pipe operator [Elixir School](https://elixirschool.com/lessons/basic
 `npm install --save ex-pipe`
 
 ## Usage
-The idea 
+The idea
 
 ```
-const P = 
+const P =
 ```

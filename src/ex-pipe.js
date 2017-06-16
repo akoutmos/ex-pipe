@@ -1,9 +1,15 @@
-/*
+export {
+    ExecPipe,
+    GenPipe
+}
+
+/**
+ *
  * Pipe is a simple utility that attempts to mimic the
  * pipe '|>' functionality found in Elixir, but in JS
+ *
  */
-
-export default function (initialInput, ...nextFunctions) {
+function ExecPipe (initialInput, ...nextFunctions) {
     let input = initialInput
     let output = initialInput
 
@@ -22,4 +28,16 @@ export default function (initialInput, ...nextFunctions) {
     }
 
     return output
+}
+
+/**
+ *
+ * This is used to create a reusable pipeline of
+ * functions
+ *
+ */
+function GenPipe (...functions) {
+    return function (initialInput) {
+        return ExecPipe(initialInput, ...functions)
+    }
 }
