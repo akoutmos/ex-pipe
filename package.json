@@ -1,6 +1,6 @@
 {
     "name": "ex-pipe",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Library used to mimic Elixir pipe functionality",
     "main": "dist/ex-pipe.js",
     "scripts": {
