@@ -1,0 +1,10 @@
+coverage/
+node_modules/
+src/
+test/
+.babelrc
+.editorconfig
+.eslintrc.json
+.gitignore
+.travis.yml
+gulpfile.js
