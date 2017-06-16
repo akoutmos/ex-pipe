@@ -14,7 +14,7 @@ page on the pipe operator [Elixir School](https://elixirschool.com/lessons/basic
 ## Usage
 The idea here is to be able to compose functions easily and pass the result of one
 as input to the next. For example, if I had the following functions:
-```
+```javascript
 function AddOne(val) {
   return val +1;
 }
@@ -30,7 +30,7 @@ function DivideTwo(val) {
 ```
 
 I could easily compose them as follows:
-```
+```javascript
 let P = require('ex-pipe').ExecPipe;
 
 P(10,
@@ -42,7 +42,7 @@ P(10,
 
 You can also pass more than one variable to the provided functions. Like Elixir, the output of the
 previous function is the first argument into the next function, and any arguments come after. See below:
-```
+```javascript
 let P = require('ex-pipe').ExecPipe;
 
 function AddVal(val, add) {
@@ -58,7 +58,7 @@ P(10,
 
 
 You can also create reusable pipelines of functions like so:
-```
+```javascript
 let G = require('ex-pipe').GenPipe;
 
 function AddFive(val) {
